@@ -1,0 +1,6 @@
+function sortBabies() {
+  $(".baby-container .single-baby").sort(sort_li).appendTo('.baby-container');
+}
+function sort_li(a, b) {
+    return ($(b).attr('data-time-order')) < ($(a).attr('data-time-order')) ? -1 : 1;
+}
